@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>JMSA</title>
+      <link rel="stylesheet" href="style.css">
+
+      <!-- baffle -->
+      <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!-- JQUERY -->
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+      <!-- ICONS -->
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+      <!-- Bootstrap -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+      <!-- Scroll-Reveal -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+
+      <div class="container">
+            <div class="data">João Marcelo Santini</div>
+      </div>
+
+
+      <header>
+
+            <nav>
+
+                  <div class="menu-icon">
+                        <i class="fa fa-bars fa-2x"></i>
+                  </div>
+
+                  <div class="logo">
+                        JM
+                  </div>
+
+                  <div class="menu">
+                        <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Sobre</a></li>
+                              <li><a href="#">Projetos</a></li>
+                              <li><a href="#">Contato</a></li>
+                        </ul>
+                  </div>
+            </nav>
+            <div class="media">
+                  <ul>
+                        <li>
+                              <a href="#">
+                                    <ion-icon name="logo-linkedin" style="zoom:2.0;"></ion-icon>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="#">
+                                    <ion-icon name="logo-github" style="zoom:2.0;"></ion-icon>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="#">
+                                    <ion-icon name="logo-facebook" style="zoom:2.0;"></ion-icon>
+                              </a>
+                        </li>
+                  </ul>
+            </div>
+
+      </header>
+
+      <!-- SKILLS -->
+
+      <div class="skills-content">
+            <div class="skills">
+                  <div class="skill">
+                        <div class="skill-name">HTML</div>
+                        <div class="skill-bar">
+                              <div class="skill-per" per="80"></div>
+                        </div>
+                  </div>
+
+
+                  <div class="skill">
+                        <div class="skill-name">CSS</div>
+                        <div class="skill-bar">
+                              <div class="skill-per" per="60"></div>
+                        </div>
+                  </div>
+
+
+                  <div class="skill">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-bar">
+                              <div class="skill-per" per="40"></div>
+                        </div>
+                  </div>
+
+                  <div class="skill">
+                        <div class="skill-name">ReactJS</div>
+                        <div class="skill-bar">
+                              <div class="skill-per" per="70"></div>
+                        </div>
+                  </div>
+                  <div class="skill">
+                        <div class="skill-name">NodeJS</div>
+                        <div class="skill-bar">
+                              <div class="skill-per" per="60"></div>
+                        </div>
+                  </div>
+                  <div class="skill">
+                        <div class="skill-name">TypeScript</div>
+                        <div class="skill-bar">
+                              <div class="skill-per" per="40"></div>
+                        </div>
+                  </div>
+                  <div class="skill">
+                        <div class="skill-name">AWS</div>
+                        <div class="skill-bar">
+                              <div class="skill-per" per="45"></div>
+                        </div>
+                  </div>
+            </div>            
+      </div>
+      
+
+
+
+
+      <script type="text/javascript">
+
+            const text = baffle(".data");
+            text.set({
+                  characters: '#$%!@%▓█▓ >▒$>▓< ██░▓$#@!░ ░░/%$#@#$<▒█░▓ $░░██ ░▓█ ▒░/░ ▒>░░',
+                  speed: 120
+            })
+            text.start();
+            text.reveal(3000);
+
+            // Menu-toggle button
+
+            $(document).ready(function () {
+                  $(".menu-icon").on("click", function () {
+                        $("nav ul").toggleClass("showing");
+                  });
+            });
+
+            // Scrolling Effect
+
+            $(window).on("scroll", function () {
+                  if ($(window).scrollTop()) {
+                        $('nav').addClass('black');
+                  }
+
+                  else {
+                        $('nav').removeClass('black');
+                  }
+            });
+
+            $('.skill-per').each(function () {
+                  var $this = $(this);
+                  var per = $this.attr('per');
+                  $this.css("width", per + '%');
+                  $({ animatedValue: 0 }).animate({ animatedValue: per }, {
+                        duration: 3000,
+                        step: function () {
+                              $this.attr('per', Math.floor(this.animatedValue));
+                        },
+                        complete: function () {
+                              $this.attr('per', Math.floor(this.animatedValue)+ '%');
+                        }
+                  });
+            });
+
+      </script>
+
+
+</body>
+
+</html>
