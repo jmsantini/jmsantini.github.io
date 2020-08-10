@@ -132,10 +132,6 @@ nav ul li a {
 }
 
 
-
-
-
-
 /* ABOUT-SOBRE */
 
 .about {
@@ -148,17 +144,13 @@ nav ul li a {
 }
 
 
-
-.avatar {
+.avatar-img {
     vertical-align: middle;
     width: 250px;
     height: 250px;
     border-radius: 50%;
     border: #F4F8F9 solid 5px;
 }
-
-
-
 
 
 
