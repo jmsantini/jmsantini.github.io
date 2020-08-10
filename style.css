@@ -131,11 +131,15 @@ nav ul li a {
     .menu-icon {
         display: block;
     }
+
+    .about {
+        flex-direction: column;
+    }
 }
 
 /* ABOUT */
 
-div.about {
+.about {
     min-height: 100vh;
     top: 50%;
     left: 50%;
@@ -145,14 +149,9 @@ div.about {
     background-color: white;
 }
 
-@media(max-width: 786px) {
-    .about {
-        flex-direction: column;
-    }
-}
 
 
- img.avatar-img {
+.avatar-img {
     vertical-align: middle;
 	margin: 20px;
 	height: calc(180px + 6vw);
