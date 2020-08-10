@@ -4,17 +4,17 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background: #252626;
+    background: #262626;
     font-family: 'Poppins', 'sans-serif';
 }
 
 .data {
     color: #F4F8F9;
     font-size: 40px;
-    letter-spacing: 12px;
-    font-weight: 600;
+    letter-spacing: 10px;
+    font-weight: 1000;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -24,6 +24,7 @@ header {
     width: 100%;
     height: 100vh;
     background-size: cover;
+    background-image: url(./img/stars.jpg);
 }
 
 .media {
@@ -67,7 +68,7 @@ nav {
 nav ul {
     line-height: 60px;
     list-style: none;
-    background: #252626;
+
     overflow: hidden;
     color: #F4F8F9;
     padding: 0;
@@ -78,7 +79,7 @@ nav ul {
 }
 
 nav.black ul {
-    background: #111111;
+    background: #6805F2;
     z-index: -1;
 }
 
@@ -91,12 +92,13 @@ nav ul li a {
     text-decoration: none;
     color: #F4F8F9;
     font-size: 16px;
+    font-weight: bold;
 }
 
 .menu-icon {
     line-height: 60px;
     width: 100%;
-    background: #111111;
+    background: #6805F2;
     text-align: right;
     box-sizing: border-box;
     padding: 15px 24px;
@@ -116,7 +118,7 @@ nav ul li a {
         background: #111111;
     }
     nav.black ul {
-        background: #111111;
+        background: #111111;   
     }
     .showing {
         max-height: 34em;
@@ -132,8 +134,7 @@ nav ul li a {
     }
 }
 
-
-
+/* ABOUT */
 
 div.about {
     min-height: 100vh;
@@ -142,21 +143,21 @@ div.about {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: white;
 }
 
 
  img.avatar-img {
     vertical-align: middle;
+	margin: 20px;
+	height: calc(180px + 6vw);
+	width: calc(180px + 6vw);
+	border: calc(8px + 0.2vw) solid solid;
+    box-shadow: 0 0 5px 5px #5204BF;
     border-radius: 50%;
-    border: #F4F8F9 solid 5px;
-    height: 250px;
-    width: 250px;
 }
 
-
-
-
-
+/* SKILLS */
 
 .skills-content {
     display: flex;
