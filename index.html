@@ -34,7 +34,7 @@
 
 
       <header>
-            <div class="container">
+            <div class="container" id="home">
                   <div class="data">João Marcelo Santini</div>
             </div>
 
@@ -51,8 +51,8 @@
 
                   <div class="menu">
                         <ul>
-                              <li><a href="#">Home</a></li>
-                              <li><a href="#">Sobre</a></li>
+                              <li><a href="#home">Home</a></li>
+                              <li><a href="#about">Sobre</a></li>
                               <li><a href="#">Projetos</a></li>
                               <li><a href="#">Contato</a></li>
                         </ul>
@@ -75,76 +75,37 @@
                                     <ion-icon name="logo-facebook" style="zoom:2.0;"></ion-icon>
                               </a>
                         </li>
+                        <li>
+                              <a href="https://api.whatsapp.com/send?phone=5514996821388" target="_blank">
+                                    <ion-icon name="logo-whatsapp" style="zoom:2.0;"></ion-icon>
+                              </a>
+                        </li>
                   </ul>
             </div>
 
       </header>
 
+
       <!-- ABOUT-->
 
-      <div class="about">
+      <div class="about" id="about">
             <img class="avatar-img" src="./img/avatar.jpg" alt="avatar">
             <div class="about-container">
+                  <h2>Eu sou</h2>
                   <h1>João Marcelo</h1>
-                  <p>asdasd asdasda sdasd</p>
-                  <p>asdasdasd</p>
+                  <p>Desenvolvedor Web Full Stack</p>
+                  <br>
+                  <p class="about-skills">|HTML |CSS |JavaScript |NodeJS |ReactJS |MySQL</p>
+                  <button class="button-cv" type="button"><a class="stl-cv" href="#"> CV em PDF </a></button>
             </div>
       </div>
 
       <!-- SKILLS -->
 
       <div class="skills-content">
-            <div class="skills-container">
-                  <div class="skills">
-                        <div class="skill">
-                              <div class="skill-name">HTML</div>
-                              <div class="skill-bar">
-                                    <div class="skill-per" per="80"></div>
-                              </div>
-                        </div>
+            <h3>Meus conhecimentos</h3>
+            <div class="skills-conhecimentos">
 
-                        <div class="skill">
-                              <div class="skill-name">CSS</div>
-                              <div class="skill-bar">
-                                    <div class="skill-per" per="60"></div>
-                              </div>
-                        </div>
-
-                        <div class="skill">
-                              <div class="skill-name">JavaScript</div>
-                              <div class="skill-bar">
-                                    <div class="skill-per" per="40"></div>
-                              </div>
-                        </div>
-
-                        <div class="skill">
-                              <div class="skill-name">ReactJS</div>
-                              <div class="skill-bar">
-                                    <div class="skill-per" per="70"></div>
-                              </div>
-                        </div>
-
-                        <div class="skill">
-                              <div class="skill-name">NodeJS</div>
-                              <div class="skill-bar">
-                                    <div class="skill-per" per="60"></div>
-                              </div>
-                        </div>
-
-                        <div class="skill">
-                              <div class="skill-name">TypeScript</div>
-                              <div class="skill-bar">
-                                    <div class="skill-per" per="40"></div>
-                              </div>
-                        </div>
-
-                        <div class="skill">
-                              <div class="skill-name">AWS</div>
-                              <div class="skill-bar">
-                                    <div class="skill-per" per="45"></div>
-                              </div>
-                        </div>
-                  </div>
             </div>
       </div>
 
