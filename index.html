@@ -96,7 +96,7 @@
                   <h1>João Marcelo</h1>
                   <p>Desenvolvedor Web Full Stack</p>
                   <br>
-                  <p class="about-skills">|HTML |CSS |JavaScript |NodeJS |ReactJS |MySQL</p>
+                  <p class="about-skills">|HTML |CSS |JavaScript |NodeJS |ReactJS |MySQL |TypeScript </p>
                   <a class="stl-cv" href="CV__Joao_Marcelo_Santini.pdf" target="_blank"><button class="button-cv"
                               type="button"> CV em PDF </button></a>
             </div>
@@ -107,7 +107,7 @@
       <div class="skills-content">
             <h2>Meus conhecimentos</h2>
             <div class="skills-conhecimentos">
-                  <div class="skill">
+                  <div class="skill" id="skill1">
                         <h1>Front-end</h1>
                         <p>
                               Desenvolvimento de aplicações web utilizando HTML, CSS e Javascript.
@@ -117,7 +117,7 @@
                         </p>
                   </div>
 
-                  <div class="skill">
+                  <div class="skill" id="skill2">
                         <h1>Back-end</h1>
                         <p>
                               Aplicações utilizando NodeJS, TypeScript e MySql.
@@ -239,6 +239,72 @@
                   }, 500);
             });
 
+
+            // SCROLL REVEAL
+
+            ScrollReveal().reveal('.media', {
+                  origin: 'bottom',
+                  distance: '50px',
+                  delay: 500
+            });
+
+            ScrollReveal().reveal('.avatar-img', {
+                  origin: 'bottom',
+                  distance: '70px',
+                  delay: 500
+            });
+
+            ScrollReveal().reveal('.about-container', {
+                  origin: 'bottom',
+                  distance: '70px',
+                  delay: 500
+            });
+
+            ScrollReveal().reveal('.button-cv', {
+                  origin: 'bottom',
+                  distance: '70px',
+                  delay: 800
+            });
+
+            ScrollReveal().reveal('#skill1', {
+                  origin: 'bottom',
+                  distance: '70px',
+                  delay: 500
+            });
+
+
+            ScrollReveal().reveal('#skill2', {
+                  origin: 'bottom',
+                  distance: '70px',
+                  delay: 600
+            });
+
+
+            ScrollReveal().reveal('.project-img', {
+                  origin: 'bottom',
+                  distance: '70px',
+                  delay: 500
+            });
+
+            ScrollReveal().reveal('.project-details', {
+                  origin: 'bottom',
+                  distance: '70px',
+                  delay: 700
+            });
+
+            ScrollReveal().reveal('.card-img', {
+                  origin: 'bottom',
+                  distance: '20px',
+                  delay: 500
+            });
+
+            ScrollReveal().reveal('.contact-container', {
+                  origin: 'bottom',
+                  distance: '20px',
+                  delay: 700
+            });
+
+            
 
 
       </script>
