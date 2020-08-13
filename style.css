@@ -273,6 +273,7 @@ nav ul li a {
     text-decoration: none;
     cursor: pointer;
     transition: 0.5s;
+    margin: 5px;
 }
 
 .button-project:hover {
